@@ -1,0 +1,33 @@
+* {
+    font-family: arial;
+}
+
+#Gender_Category {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 600px;
+    height: 350px;
+    background-color: lightgreen;
+}
+h2 {
+    margin-left: 20px;
+}
+
+p {
+    font-weight: bold;
+}
+#final_Applicable_discount {
+    margin-left: -110px;
+}
+button {
+    background-color: rgba(64, 224, 208, 0.4);
+    padding: 10px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 13px;
+    margin: 8px 40px;
+    width: 215px;
+}
+button:hover {
+    background-color: turquoise
+}

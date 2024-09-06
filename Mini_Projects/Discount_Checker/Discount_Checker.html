@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Discount Checker</title>
+        <link rel="stylesheet" href="Discount_Checker.css">
+    </head>
+    <body>
+        <h1>Discount Checker</h1>
+        <div id="Gender_Category">
+            <div>
+                <h2>Women's Discount</h2>
+                <button onclick="age=7,gen='W'; ageChecker(age,gen); display()">Discount for all age Women</button>
+                <button onclick="age=2, gen='W'; ageChecker(age,gen); display()">Age Under 5 Year</button>
+            </div>
+            <div>
+                <h2>Men's Discount</h2>
+                <button onclick="age=2, gen='M'; ageChecker(age,gen); display()">Age Under 5 Year</button>
+                <button onclick="age=7, gen='M'; ageChecker(age,gen); display()">Age Between 5 to 8 years</button>
+                <button onclick="age=10, gen='M+'; ageChecker(age,gen); display()">Age Between 9 to 65</button>
+                <button onclick="age=66, gen='m'; ageChecker(age,gen); display()">Age Above 65+ (Seniar Citizen)</button>
+            </div>
+            <p>Applicable Discount is : </p>
+            <p id="final_Applicable_discount"></p>
+        </div>
+        <script>
+            let age=0; let gender='W';
+            const woment_discount = '50%';
+            const under_5_age = '100%';
+            const upto_8_age = '50%';
+            const senier_citizen = '30%';
+            const no_discount = '0%'
+            let finalDiscount='Yes';
+
+            function ageChecker(age,gender){
+                if (gender == 'W'){
+                    if(age<5){
+                        finalDiscount = under_5_age;
+                    }
+                    else if(age > 5) {
+                        finalDiscount = woment_discount;
+                    }
+                }
+                else {
+                    if (age < 5){
+                    finalDiscount = under_5_age;
+                    }
+                    else if (age>5 && age<8){
+                        finalDiscount = upto_8_age;
+                    }
+                    else if (age>8 && age<65){
+                        finalDiscount = no_discount;
+                    }
+                    else if (age >65){
+                        finalDiscount = senier_citizen;
+                    }
+                }
+            }
+            function display(){
+              document.querySelector('#final_Applicable_discount').innerText =finalDiscount;
+            }
+        </script>
+    </body>
+    </html>

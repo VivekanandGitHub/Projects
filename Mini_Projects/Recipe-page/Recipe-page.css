@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    background-color: hsl(30, 54%, 90%);
+}
+
+img {
+    width: 520px;
+    border-radius: 15px;
+}
+
+#div1 {
+    width: 520px;
+    padding: 30px;
+    margin: 70px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    margin: auto;
+}
+
+#description {
+    font-size: 13px;
+}
+
+#prepration-div {
+    background-color: hsla(330, 55%, 75%, 0.205);
+    padding: 5px 20px;
+    font-size: 13px;
+}
+#prepration-div > h4 {
+    font-weight: 800;
+    color: hsl(332, 51%, 32%);
+}
+
+#prepration-div > ul > li,#ingredients-div > ul > li, #Instructions-div > ul > li {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+hr {
+    margin-top: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.171);
+}
+
+#table-div > p {
+    font-size: 13px;
+}
+
+.row2nd {
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
+
+td {
+    font-size: 13px;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.322);
+    padding: 10px;
+}
+ table {
+    width: 100%;
+    border: none;
+ }
+
+ h2 {
+    color: hsl(14, 45%, 36%);
+    font-weight: 800;
+ }
+
+ @media (max-width: 375px){
+    body {
+    background-color: hsl(0, 0%, 100%);
+    }
+    img {
+        width: 100%;
+        border-radius: 0px;
+        margin: -30px auto auto -30px;
+    }
+    #div1 {
+        width: 375px;
+        background-color: hsl(0, 0%, 100%);
+        margin: auto;
+        padding: auto;
+    }    
+    h1 {
+        width: 60%;
+    }
+    h2 {
+        color: hsl(14, 45%, 36%);
+        font-weight: 800;
+        width: 60%;
+     }
+    #prepration-div, #ingredients-div, #Instructions-div, #table-div, #description  {
+        width: 70%;
+    }
+ }
+
+    

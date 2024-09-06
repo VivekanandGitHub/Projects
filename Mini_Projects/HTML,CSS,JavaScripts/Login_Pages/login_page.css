@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('Images_used/liquid-purple-background.jpg');
+    font-family: arial;
+    background-size: cover;
+    background-position: center;
+}
+
+.Login-Box {
+    width: 250px;
+    height: 290x;
+    padding: 10px 50px 20px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    backdrop-filter: blur(15px);
+}
+
+.Login-Box h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 13px;
+    color: white;
+}
+
+.input-box input {
+    width: 235px;
+    height: 35px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: transparent;
+    font-size: 14px;
+    color: white;
+    padding-left: 15px;
+}
+
+.Login-Box .input-box {
+    position: relative;
+}
+
+.input-box img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 18px;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: white;
+    margin-bottom: 15px;
+}
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot label input {
+    margin-right: 5px;
+    accent-color:white;
+    
+}
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.login-button button {
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 600;
+    cursor: pointer;
+} 
+
+.footer {
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.footer p {
+    color: white;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer a:hover {
+    text-decoration: underline;
+}

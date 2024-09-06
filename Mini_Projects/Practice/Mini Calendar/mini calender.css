@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body {
+    background-color: rgb(145, 94, 240);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+#divContainer {
+    width: 180px;
+    height: 200px;
+    background-color: white;
+    border-radius: 7px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+}
+
+.month {
+    background-color: rgb(233, 82, 27);
+    height: 18%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    align-content: center;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.day {
+    height: 20%;
+    align-content: center;
+    color: #878787;
+}
+
+.date {
+    height: 42%;
+    align-content: center;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.year {
+    height: 20%;
+    align-content: center;
+    color: #878787;
+}

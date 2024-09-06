@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+     <link rel="stylesheet" href="form.css"> 
+  </head>
+  <body>
+    <h1 id="title" >Apply for Web-Developer role</h1>
+    <p id="description" >Before apply make sure you have B.Tech degree or Final Year in Computer Science</p>
+    <div id="layer1">
+        <form id="survey-form">
+            <label id="name-label">Name
+                <input id="name" type="text" required placeholder="Enter your name">
+             </label>
+             <label id="email-label">Email
+                <input id="email" type="email" required placeholder="Enter your Email">
+            </label>
+            <label id="phone-number">Phone Number
+                <input id="number" type="number" min="10" max="10" placeholder="Enter your number">
+            </label>
+            <label id="number-label">Age
+                <input id="number" type="number" min=18 max=25 placeholder="Age" required>
+            </label>
+            Position Applied
+            <select id="dropdown">
+                <option>Select one</option>
+                <option>Frondend Developer</option>
+                <option>Backend Developer</option>
+                <option>Full stack Developer</option>
+            </select>
+            How did you hear about us ?
+            <select id="dropdown">
+                <option>Select one</option>
+                <option>Social Media</option>
+                <option>Family & Friend</option>
+                <option>from official Website</option>
+            </select>
+            <label>
+                Your Experience<br> 
+                <input class="experience"type="radio" name="refer" value="1st" >
+                Fresher
+                <input class="experience" type="radio" name="refer" value="2st" >
+                Some Experience
+                <input class="experience" type="radio" name="refer" value="3st" >
+                2 years+ Experience
+            </label>
+            Upload youe Resume
+            <input type="file" required>
+            LinkedIn
+            <input type="text" required>
+            <textarea id="suggestion" placeholder="Why you want this job?"></textarea>
+            <input id="submit" type="submit" value="Apply" >
+        </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+body {
+    background-color: lightgreen;
+    font-family: Tahoma;
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    color: white;
+  }
+  
+  #layer1 {
+    min-width: 300px;
+    max-width: 750px;
+    height: 90%;
+    border: none;
+    background-color: rgba(27, 27, 50, 0.8);
+    margin: auto;
+    margin-top: 40px;
+    padding: 40px 0;
+  }
+
+  form{
+    width: 80%;
+    margin: auto;
+  }
+  
+  input, textarea, select {
+    display:block;
+    width: 100%;
+    height: 40px
+  } 
+
+  label {
+  }
+  
+  .experience {
+    width: unset;
+  }
+  
+  #title, #description {
+    text-align: center;
+  }
+  

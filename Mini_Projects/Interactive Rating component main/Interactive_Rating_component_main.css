@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #141519;
+    color: white;
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    background-color: #1D242E;
+    width: 290px;
+    height: fit-content;
+    padding: 30px;
+    display: grid;
+    row-gap: 25px;
+    border-radius: 25px;
+}
+
+#star {
+    background-color: #272E38;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    align-content: center;
+    text-align: center;
+}
+#star > img {
+    width: 16px;
+}
+
+#quetion > h1 {
+    font-size: 2em;
+    margin-bottom: -15px;
+}
+
+#description > h4 {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #737A84;
+}
+
+#ratings {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rating {
+    background-color: #272E38;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    display: grid;
+    place-content: center;
+    font-size: 0.9em;
+    color: #a5adb4;
+    border: 0px solid;
+    cursor: pointer;
+}
+.rating.active {
+    color: black;
+    background-color: white;
+}
+
+#submit_btn {
+    background-color: #FC7613;
+    border-radius: 20px;
+    border: none;
+    padding: 13px 105px;
+    font-weight: 700;
+}
+#submit_btn.active {
+    background-color: white;
+}
+
+#submit_box {
+    margin: auto;
+}
+
+
+@media (max-width: 500px) {
+    
+    main {
+        width: 250px;
+        height: fit-content;
+    }
+}
+
+
