@@ -64,7 +64,7 @@ main {
     border: 0px solid;
     cursor: pointer;
 }
-.rating.active {
+.rating:hover {
     color: black;
     background-color: white;
 }
@@ -75,8 +75,9 @@ main {
     border: none;
     padding: 13px 105px;
     font-weight: 700;
+    cursor: pointer;
 }
-#submit_btn.active {
+#submit_btn:hover {
     background-color: white;
 }
 

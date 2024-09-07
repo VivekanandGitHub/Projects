@@ -1,13 +1,14 @@
-const quetions = document.querySelectorAll('.quetion');
+const quetions = document.querySelectorAll(".quetion");
+const icon = document.querySelector(".icon");
+const answer = document.querySelector(".answer");
 
-quetions.forEach(faq_Quetion => {
+co
 
-    const icon = document.querySelector('.icon');
-    const answer = document.querySelector('.answer');
+quetions.forEach(function(val) {
 
-    faq_Quetion.addEventListener('click', () => {
-        icon.classList.toggle("active");
-        answer.classList.toggle("active")
+    val.addEventListener("click", function() {
+        val.childNodes[1].classList.toggle("active");
+        val.childNodes[3].classList.toggle("active")
     });
 });
 
